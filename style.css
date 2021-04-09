@@ -1,0 +1,78 @@
+:root{
+    --blackish: #202020;
+    --darkgrey: #3f3f3f;
+    --lightgrey: #707070;
+    --eggyellow: #ffdf6c;
+    --white: #ffffff;
+}
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--white);
+}
+
+header{
+    padding: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: var(--darkgrey);
+    color: white;
+
+}
+
+header h1{
+    display: inline-block;
+    height: 40px;
+    width:380px;
+    background-color: var(--eggyellow);
+    color: var(--blackish);
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: var(--eggyellow);
+    color: var(--blackish);
+
+}
+
+header nav{
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 20px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+figure{
+    height: 250px; 
+    width: 100%;
+    margin-bottom: 25%;
+    background-image: url("./coding1.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#keys {
+    position: absolute;
+    left: 75%;
+    top: 35%;
+    height: 40px;
+    width: 380px;
+    background-color: var(--eggyellow);
+    color: var(--blackish);
+}
