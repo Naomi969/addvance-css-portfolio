@@ -35,15 +35,15 @@ header h1{
     color: var(--blackish);
 
 }
-a{
+header a{
     text-decoration: none;
     color: white;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: var(--eggyellow);
     color: var(--blackish);
-
+    
 }
 
 header nav{
@@ -82,17 +82,16 @@ figure{
     flex-wrap: wrap;
 }
 
-.aboutmecontainer {
-    width: 300px;
+.aboutmeaside {
+    width: 350px;
     height: 200px;
+    margin-right: 0px; 
+    text-align: end;
+    font-size: 45px;   
+}
+#position1{
     position: absolute;
     top: 45%;
-   margin-right: 20px;    
-}
-
-#aboutme {
-    text-align: end;
-    font-size: 45px;
 }
 .loremcontainer{
     height: 200px;
@@ -102,7 +101,34 @@ figure{
     left: 25%;
     padding-left: 10px;
     border-left: var(--eggyellow) solid 6px;
-
+    
 }
 
+.workpics{
+    display: flex;
+    justify-content: end;
+    height: fit-content;
+    width: 75%;
+    position: relative;
+    
+}
+.hi{
+    height: 150px;
+    width: 75%;
+    position: absolute;
+    top: 117%;
+    left: 25%;
+    border-left: var(--eggyellow) solid 6px;
 
+}
+.hi  {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hi a{
+    text-decoration: none;
+    color: var(--blackish);
+    
+}
