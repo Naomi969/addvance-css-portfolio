@@ -62,7 +62,7 @@ figure{
     height: 250px; 
     width: 100%;
     margin-bottom: 25%;
-    background-image: url("./coding1.jpeg");
+    background-image: url("./IMG/coding1.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -76,3 +76,33 @@ figure{
     background-color: var(--eggyellow);
     color: var(--blackish);
 }
+
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutmecontainer {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 45%;
+   margin-right: 20px;    
+}
+
+#aboutme {
+    text-align: end;
+    font-size: 45px;
+}
+.loremcontainer{
+    height: 200px;
+    width: 75%;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    padding-left: 10px;
+    border-left: var(--eggyellow) solid 6px;
+
+}
+
+
