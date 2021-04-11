@@ -13,9 +13,7 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-body{
-    background-color: var(--white);
-}
+/* upper portion of web- navs and heading */
 
 header{
     padding: 20px;
@@ -38,24 +36,23 @@ header a{
     color: white;
 }
 
-header nav a:hover {
-    background-color: var(--eggyellow);
-    color: var(--blackish);
-    
-}
-
 header nav{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-size: 20px;
 }
+header nav a:hover {
+    background-color: var(--eggyellow);
+    color: var(--blackish);
+}
+
 
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* coding background pictures */
 figure{
     height: 250px; 
     width: 100%;
@@ -74,8 +71,6 @@ figure{
     background-color: var(--eggyellow);
     color: var(--blackish);
 }
-
-
 .content1{
     height: 200px;
     width: 75%;
@@ -91,7 +86,7 @@ figure{
     height: 150px;
     width: 75%;
     position: absolute;
-    top:200%;
+    top:225%;
     left: 25%;
     border-left: var(--eggyellow) solid 6px;
     
@@ -202,9 +197,5 @@ figure{
     text-align: right;
     font-size: 45px;
     position: absolute;
-    top: 200%;
+    top: 225%;
    
-}
-.contactinfo {
-    
-}
