@@ -75,10 +75,6 @@ figure{
     color: var(--blackish);
 }
 
-.maincontainer{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .content1{
     height: 200px;
@@ -95,7 +91,7 @@ figure{
     height: 150px;
     width: 75%;
     position: absolute;
-    top: 117%;
+    top:200%;
     left: 25%;
     border-left: var(--eggyellow) solid 6px;
     
@@ -104,6 +100,7 @@ figure{
     display: inline-flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+   
 }
 
 .contactme2 a{
@@ -117,63 +114,97 @@ figure{
     flex-direction: column;
 }
 
-/* .subproject {
-    position: relative;
-    flex: 45%;
-    margin:1%;
-    border: var(--eggyellow);
-} */
-/* .content2{
-    width: 70%;
-    height: auto;
-    border-left: var(--eggyellow) solid 6px;
-    word-spacing: 6px;
-    padding-left: 50px; 
-    
-}*/
+
 
 .subproject img:hover{
     opacity: 0.5;
-    transition:0.8s ease-in-out;
-}
-.tittle {
-    position: absolute;
-    bottom: 40%;
-    padding-left: 20px;
-    padding-right: 10px;
-    background-color: var(--eggyellow);
-    
-}
-#second {
-    display: flex;
-    flex-wrap: wrap;
+    transition:0.8s ease-in;
 }
 
 --------------------
 
 .big {
-    width: 100%;
-    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    height: 300px;
+}
+.aside2{
     
+    width: 25%;
+    height: 100vh;
+    text-align: right;
+    border-right: var(--eggyellow) solid 6px;
+    font-size: 45px;
+    
+}
+#first {
+    margin: 55px;
+}
+#first img{
+    width:100%;
+    height: auto;
     
 }
 
 .contentcontainer { 
+    display: flex;
+    flex-direction: column;
     width: 75%;
     height: 100%;
-    position: absolute;
-    left: 25%;
-
-}
-.aside {
-    width: 25%;
-   height: 100%;
-    margin-right: 0px; 
-    text-align: end;
-    font-size: 45px;
+    position: relative;
+     left: 25%;
+    top: -910px;
     
 }
-#position1{
+.aside {
+    width: 285px;
+    height: 200px;
+    text-align: right;
+    font-size: 45px;
     position: absolute;
     top: 45%;
+}
+
+.activities{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#second{
+    min-width: 300px;
+    min-height: 200px;
+    margin: 30px;
+}
+
+#second img{
+    height: 100%;
+    width: 100%;
+}
+
+.tittle {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: var(--eggyellow);
+    color: var(--blackish);
+    font-size: 20px;
+    width: 30%;
+
+}
+
+.aside3{
+    width: 285px;
+    height: 200px;
+    text-align: right;
+    font-size: 45px;
+    position: absolute;
+    top: 200%;
+   
+}
+.contactinfo {
+    
 }
