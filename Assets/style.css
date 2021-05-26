@@ -1,200 +1,180 @@
-:root{
-    --blackish: #202020;
-    --darkgrey: #3f3f3f;
-    --lightgrey: #707070;
-    --eggyellow: #ffdf6c;
-    --white: #ffffff;
-}
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-/* upper portion of web- navs and heading */
-
-header{
-    padding: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: var(--darkgrey);
+:root {
+    --font: Arial, Helvetica, sans-serif; 
+    --dark-teal: #3AAFA9;
+    --steel: #2b7a78;
+    --white: #feffff;
+    --black: #17252a
+  }
+  
+  body {
+      font-family: var(--font);
+      background-color: var(--white);
+    }
+  
+  /* Name and Navigation Menu */
+  
+  /* Classes */
+  .Name-and-Nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--steel);
+    padding: 30px 0px 30px 0px;
+    font-family: var(--font);
+  }
+  
+  /* IDs */
+  #Name {
+    font-size: 24px;
     color: white;
-
-}
-
-header h1{
-    display: inline-block;
-    height: 40px;
-    width:380px;
-    background-color: var(--eggyellow);
-    color: var(--blackish);
-
-}
-header a{
-    text-decoration: none;
-    color: white;
-}
-
-header nav{
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
-}
-header nav a:hover {
-    background-color: var(--eggyellow);
-    color: var(--blackish);
-}
-
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-/* coding background pictures */
-figure{
-    height: 250px; 
-    width: 100%;
-    margin-bottom: 25%;
-    background-image: url("./IMG/coding1.jpeg");
-    background-size: cover;
-    background-position: center;
-}
-
-#keys {
-    position: absolute;
-    left: 75%;
-    top: 35%;
-    height: 40px;
-    width: 380px;
-    background-color: var(--eggyellow);
-    color: var(--blackish);
-}
-.content1{
-    height: 200px;
-    width: 75%;
-    position: absolute;
-    top: 45%;
-    left: 25%;
-    padding-left: 10px;
-    border-left: var(--eggyellow) solid 6px;
-    
-}
-
-.contactme2{
-    height: 150px;
-    width: 75%;
-    position: absolute;
-    top:225%;
-    left: 25%;
-    border-left: var(--eggyellow) solid 6px;
-    
-}
-.contactme2  {
+    background-color: var(--dark-teal);
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px 80px 10px 20px;
+    text-align: right;
+  }
+  
+  #Navigation ul a:hover {
+    color: var(--black)
+    transition: 0s;
+    border-bottom: white 2px;
+  }
+  
+  #Navigation ul a {
+    float: center;
     display: inline-flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-   
-}
-
-.contactme2 a{
+    border-bottom: white 2px;
     text-decoration: none;
-    color: var(--blackish);
+    color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 14px 20px;
+  }
+  
+  
+  /* Software Engineer & Personal Photo */
+  
+  .Software-Engineer {
+    font-size: 14px;
+    color: white;
+    background-color:var(--dark-teal);
+    height: 15vh;
+    font-family: var(--font);
+    padding-top: 15px;
+  }
+  
+  .job-title {
+    margin-left: 5vw;
+    font-family: var(--font)
+  }
+  
+  
+  /* Left Side:  ABOUT ME , WORK, CONTACT ME */
+  .Side-Content {
+    text-align: right;
+    width: 30%;
+    border-right: black solid 2px;
+    font-family: var(--font);
+    padding-right: 25px;
+    padding-top: 25px;
+    font-size: 18px;
+  }
+  
+  
+  /* About Me Content */
+  .About-Me-Container, .Work-Container, .Contact-Me-Container {
+    background-color: var(--white);
+    display: flex;
+    padding: 10px 0;
+  }
+  
+  .About-Me-Content img {
+    height: 250px;
+    float:right;
     
-}
-
-#projects{
+  }
+  
+  .About-Me-Content {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    display:flex;
+  }
+  
+  .description-me {
+    padding: 26px;
+  }
+  
+  .About-Me-Content .HELLOWORLD {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 24px;
+  }
+  
+  /* Work Content */
+  
+  .Work-Content {
     display: flex;
     flex-direction: column;
-}
-
-
-
-.subproject img:hover{
-    opacity: 0.5;
-    transition:0.8s ease-in;
-}
-
---------------------
-
-.big {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75%;
-    height: 300px;
-}
-.aside2{
-    
-    width: 25%;
-    height: 100vh;
-    text-align: right;
-    border-right: var(--eggyellow) solid 6px;
-    font-size: 45px;
-    
-}
-#first {
-    margin: 55px;
-}
-#first img{
-    width:100%;
-    height: auto;
-    
-}
-
-.contentcontainer { 
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    height: 100%;
-    position: relative;
-     left: 25%;
-    top: -910px;
-    
-}
-.aside {
-    width: 285px;
-    height: 200px;
-    text-align: right;
-    font-size: 45px;
-    position: absolute;
-    top: 45%;
-}
-
-.activities{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-#second{
+    width: 70%;
+  }
+   #Project-1 {
+     margin: 30px;
+   }
+  
+   #Project-1 img{
+     width: 100%;
+     height: auto;
+   }
+  
+   #bottom {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+   }
+  
+  .Project-Content {
+    position:relative;
+  }
+  
+  .proj-container {
     min-width: 300px;
     min-height: 200px;
     margin: 30px;
-}
-
-#second img{
+  }
+  
+  .proj-container img {
     height: 100%;
     width: 100%;
-}
-
-.tittle {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: var(--eggyellow);
-    color: var(--blackish);
-    font-size: 20px;
+  }
+  
+  .Container-Lable {
+    background-color: var(--dark-teal);
+    color: black;
+    font-size: 10px;
     width: 30%;
-
-}
-
-.aside3{
-    width: 285px;
-    height: 200px;
-    text-align: right;
-    font-size: 45px;
-    position: absolute;  
-    top: 225%;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    padding-right:20px;
+    padding-left:20px;
+    opacity: 85%;
+  }
+  
+  
+  /* Contact Me Content  */
+  
+  #Contact-Me-Content ul a {
+    float: right;
+    display: inline-flex;
+    justify-content: space-evenly;
+    border-bottom: white 2px;
+    text-decoration: none;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 20px;
+  }
+  
+  #menu:hover {
+    transition: 0s;
+    border-bottom: 2px solid var(--dark-teal);
+    color:var(--dark-teal);
+  }
+    
