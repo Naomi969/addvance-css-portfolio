@@ -1,108 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>NTS-Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1> Naomi Torres Serrano </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#keys">About Me</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#contactme">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naomi Torres</title>
+    <link rel="stylesheet" href="./Assets/reset.css"/>
+    <link rel="stylesheet" href="./Assets/style.css"/>
+  </head>
+
+ <!-- Name and Navigation at the top of the webpage --> 
+
+  <body>
+    <header class="Name-and-Nav">
+      <div id="Name">
+        <h1>Naomi Torres</h1>
+      </div> 
+
+      <nav id="Navigation">
+        <ul>
+          <a id="menu" href="#aboutMe">About Me</a>
+          <a id="menu" href="#WORK">Work</a>
+          <a id="menu" href="#ContactMe">Contact Me</a>
+        
+        </ul>
+      </nav>
     </header>
 
-    <figure >
-            <h1 id="keys">My Portfolio</h1>
+    <header class="Software-Engineer">
+      <div class="job-title">
+        <h1>Student</h1>
+        <h3>Raleigh, NC</h3>
+      </div>
+    </header>
 
-    </figure>
+<!-- About Me Container-->
 
-    <main>
-        <section>
-            <aside class="aside">
-                <h1>
-                    About <br> Me 
-                </h1>
-            </aside>
-            <section class="content1">
-                <p>
-                    Hi there! I am originally from Puerto Rico, I have not been here for long and i just graduated high school. Since i was little, i have had people around me who are web developers, database engineers, and plenty of other people in the industry. I believe its safe to say that they are the reason why i have decided to embark on this journey.
-                </p>
-                <br>
-                <p>
-                    I am on my way to become a full stack webdeveloper and i hope to be able to expand my knowledge to data base science a few years down the road. 
-                </p>
-            </section>
-        </section> 
-        
-        <div class="big">
+ <section class="About-Me-Container" id="aboutMe">
 
-            <aside class="aside2" id="work">
-                <h1>
-                    Work 
-                </h1>
-            </aside>
+    <aside class="Side-Content">
+        <h2>About Me</h2> 
+    </aside>
 
-            <div class="contentcontainer">
-                <section class="content2" id="first" >
-                        <section class="subproject">
-                             <!-- <div class="tittle">
-                                <h3>coming soon</h3>
-                            </div>  -->
-                            <a href="#"><img src="./IMG/ui-image-placeholder-wireframes-apps-260nw-1037719204.webp"></a>
-                        </section>
-                </section>
-           
-                <section class="activities" >
-                    <section id="second">
-                        <section class="subproject">
-                             <!-- <div class="tittle">
-                                <h3>coming soon</h3>
-                            </div> -->
-                            <a href="#"><img src="./IMG/ui-image-placeholder-wireframes-apps-260nw-1037719204.webp"></a>
-                        </section>
-                    </section>
-                    <section id="second">
-                        <section class="subproject">
-                            <!-- <div class="tittle">
-                                <h3>coming soon</h3>
-                            </div>  -->
-                            <a href="#"><img src="./IMG/ui-image-placeholder-wireframes-apps-260nw-1037719204.webp"></a>
-                        </section>
-                    </section>
-                </section> 
-            </div>    
-        </div>  
-        <section class="contactinfo" >
-            <aside class="aside3" id="contactme">
-                <h1>Contact <br> Me</h1>
-            </aside>
-            <nav class="contactme2">
-                <a href="#">(919)798-0892</a>
-                <a href="https://github.com/Naomi969">Github</a>
-                <a href="Naomi.torres.serrano@outlook.com">Naomi.torres.serrano@outlook.com</a>
-            </nav>
-        </section>
-        
+    <section class ="About-Me-Content">
+      <div class="description-me">
+      <p><span class="HELLOWORLD">Hi there! </span>I am originally from Puerto Rico, I have not been here for long and i just graduated high school. Since i was little, i have had people around me who are web developers, database engineers, and plenty of other people in the industry. I believe its safe to say that they are the reason why i have decided to embark on this journey.</p>
+       <br><p>I am on my way to become a full stack webdeveloper and i hope to be able to expand my knowledge to data base science a few years down the road.</p>
+      </div>
+       <div class="personal-photo">
+        <img src="./images/pic.jpg" alt="Naomi Torres">
+       </div>  
+    </section>
 
-        
+ </section>
 
-    </main>
-</body>
+<!-- Work Container  -->
+
+<section class="Work-Container" id="WORK">
+
+    <aside class="Side-Content">
+      <h2>Work</h2>
+    </aside>
+
+    <section class="Work-Content">
+      <div id="top">
+        <div class="Project-Content" id="Project-1">
+          <div class="Container-Lable">
+            <h3>P1 Title</h3>
+            <p>P1 description</p>
+          </div>  
+            <img src="./images/Project 1.jpg" alt="Project 1"> 
+        </div>
+      </div>
+
+      <div id="bottom">
+        <div class="Project-Content proj-container" id="Project-2">
+          <div class="Container-Lable">
+            <h3>P2 Title</h3>
+            <p>P2 description</p>
+          </div> 
+            <img src="./images/Project 2.jpg" alt="Project 2"> 
+        </div>
+
+        <div class="Project-Content proj-container" id="Project-3">
+          <div class="Container-Lable">
+            <h3>P3 Title</h3>
+            <p>P3 description</p>
+          </div>  
+            <img src="./images/Project 3.jpg" alt="Project 3"> 
+        </div>
+
+        <div class="Project-Content proj-container" id="Project-4">
+          <div class="Container-Lable">
+            <h3>P4 Title</h3>
+            <p>P4 description</p>
+          </div>  
+            <img src="./images/Project 4.jpg" alt="Project 4"> 
+        </div>
+
+        <div class="Project-Content proj-container" id="Project-5">
+          <div class="Container-Lable">
+            <h3>P5 Title</h3>
+            <p>P5 description</p>
+          </div>  
+            <img src="./images/Project 5.jpg" alt="Project 5"> 
+        </div>
+      </div>
+
+  </section>
+</section>
+
+<!-- Contact Me Container-->
+
+    <section class="Contact-Me-Container" id="ContactMe">
+
+      <aside class="Side-Content">
+        <h2>Contact Me</h2>
+      </aside>
+      
+        <nav id="Contact-Me-Content">
+          <ul>
+            <a id="menu" href="#">919.798.0892</a>
+            <a id="menu" href="#">Naomi.torres.serrano@outlook.com</a>
+            <a id="menu" href="https://github.com/Naomi969" target="_blank">GitHub</a>
+            <a id="menu" href="" target="_blank">LinkedIn</a>
+          </ul>
+        </nav>  
+
+    </section>
+
+  </body>
 </html>
